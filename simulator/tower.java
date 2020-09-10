@@ -15,5 +15,3 @@ public abstract class Tower {
     protected conditionsChanged() void {
 
     }
-
-}
