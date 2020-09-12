@@ -1,17 +1,20 @@
+package simulator;
+
 import java.util.ArrayList;
 import java.util.List;
+// import Flyable;
 
 public abstract class Tower {
     private List<Flyable> observers = new ArrayList<Flyable>();
 
-    public Register(flyable : Flyable) void {
+    public void Register(flyable Flyable) {
 
     }
 
-    public Unregister(flyable : Flyable) void {
+    public void Unregister(flyable Flyable) {
 
     }
 
-    protected conditionsChanged() void {
+    protected void conditionsChanged() {
 
     }

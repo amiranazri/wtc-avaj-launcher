@@ -1,3 +1,5 @@
+package vehicles
+
 //include weatherTower
 
 private class helicopter extends Aircraft implements Flyable {

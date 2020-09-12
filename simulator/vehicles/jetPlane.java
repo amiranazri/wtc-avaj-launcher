@@ -1,7 +1,8 @@
+package vehicles;
 //include weatherTower
 
 private class jetPlane extends Aircraft implements Flyable {
-    private jetPlane(name, coordinates) {
+    private jetPlane(String name, Coordinates coordinates) {
 
     }
 

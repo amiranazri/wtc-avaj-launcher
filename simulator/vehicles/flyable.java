@@ -1,9 +1,8 @@
+package vehicles;
 
 public void interface updateConditions() {
+        public void registerTower(weatherTower);
 
-}
-
-public void registerTower(weatherTower) {
 
         }
 

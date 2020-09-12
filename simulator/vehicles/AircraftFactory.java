@@ -1,5 +1,9 @@
-public class abstract aircraftFactory {
-    public static class newAircraft() {
+package vehicles;
+
+import Tower;
+
+public abstract class AircraftFactory {
+    public static Flyable newAircraft(String type, String name, String,) {
 
     }
 }

@@ -1,19 +1,28 @@
 //package simulator.coordinates
 
-private coordinates(int longitude, int latitude, int height) {
+public class coordinates {
     private int longitude;
     private int latitude;
     private int height;
+
+        public int getLongitude() {
+            if (longitude < 1) { 
+                longitude = 1;
+            }
+            return (longitude);
         }
 
-        public getlongitude() {
-
+        public int getLatitude() {
+            if (latitude < 1) {
+                latitude = 1;
+            }
+            return (latitude);
         }
 
-        public getLatitude() {
-
+        public int getHeight() {
+            if (height < 0) {
+                height = 0;
+            }
+            return (height);
         }
-
-        public getHeight() {
-
-        }
+    }

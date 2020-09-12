@@ -1,6 +1,8 @@
+package vehicles;
+
 //include weatherTower
 
-private class balloon extends Aircraft implements Flyable {
+private class Baloon extends Aircraft implements Flyable {
     private balloon(name, coordinates) {
 
     }
