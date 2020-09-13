@@ -1,16 +1,24 @@
-public class weatherProvider {
+package weather;
 
-    private static class weatherProvider {
-        private static weatherProvider WeatherProvider;
-        private static String[] weather = {"RAIN", "FOG", "SUN", "SNOW"};
+import java.util.Random;
+import weather.Coordinates;
+
+public class WeatherProvider
+{
+    private static WeatherProvider weatherProvider;
+    private static String[] weather = {"RAIN", "FOG", "SUN", "SNOW"};
+    
+    private WeatherProvider() {}
+    
+    public static WeatherProvider getProvider() {
+        new WeatherProvider();
+        return (weatherProvider);
     }
-}
-private class WeatherProvider() {}
-
-public static class getProvider(WeatherProvider) {
-    return (weatherProvider);
-}
-
-public String getCurrentWeather(coordinates Coordinates) {
-    return (coordinates.getLongitude() + coordinates.getLatitude() + coordinates.getHeight())
+    
+    public String getCurrentWeather(Coordinates coordinates)
+    {
+        int currentWeather = coordinates.getLongitude() + coordinates.getLatitude() + coordinates.getHeight();
+        int randomizeWeather = new Random().nextInt(currentWeather);
+        return (weather[randomizeWeather % 4]);
+    }
 }

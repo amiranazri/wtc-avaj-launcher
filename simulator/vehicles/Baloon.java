@@ -1,17 +1,9 @@
 package vehicles;
 
-//include weatherTower
+import weather.WeatherTower;
 
-private class Baloon extends Aircraft implements Flyable {
-    private balloon(name, coordinates) {
+public class Baloon extends Aircraft implements Flyable (String name, Coordinates coordinates);
 
-    }
+public void updateConditions() {}
 
-    public void updateConditions() {
-
-    }
-
-    public void registerTower(weatherTower) {
-
-    }
-}
+public void registerTower(weatherTower) {}

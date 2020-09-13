@@ -1,7 +1,7 @@
-//package simulator.weather.changeWeather
+package weather;
 
-public class weatherTower{
-    public String getWeather(coordinates : Coordinates) {
+public class WeatherTower{
+    public String getWeather(Coordinates coordinates) {
 
     }
     private void changeWeather() {

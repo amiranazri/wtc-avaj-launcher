@@ -1,28 +1,33 @@
-//package simulator.coordinates
+package weather;
 
-public class coordinates {
+public class Coordinates
+{
     private int longitude;
     private int latitude;
     private int height;
+    public static String coordinateStr;
 
         public int getLongitude() {
             if (longitude < 1) { 
                 longitude = 1;
             }
-            return (longitude);
+            return (this.longitude);
         }
 
         public int getLatitude() {
             if (latitude < 1) {
                 latitude = 1;
             }
-            return (latitude);
+            return (this.latitude);
         }
 
         public int getHeight() {
             if (height < 0) {
                 height = 0;
             }
-            return (height);
+            else if(height > 100) {
+                height = 100;
+            }
+            return (this.height);
         }
-    }
+}

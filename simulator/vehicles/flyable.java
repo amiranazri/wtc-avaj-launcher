@@ -1,8 +1,11 @@
 package vehicles;
 
-public void interface updateConditions() {
-        public void registerTower(weatherTower);
+import weather.WeatherTower;
 
+public interface Flyable {
+        public void updateConditions();
+        public void registerTower(WeatherTower weatherTower);
 
-        }
+}
+
 

@@ -1,9 +1,9 @@
-package vehicles
+package vehicles;
 
-//include weatherTower
+import weather.WeatherTower;
 
-private class helicopter extends Aircraft implements Flyable {
-    private helicopter(name, coordinates) {
+public class helicopter extends Aircraft implements Flyable {
+    private helicopter(String name, Coordinates coordinates) {
 
     }
 
