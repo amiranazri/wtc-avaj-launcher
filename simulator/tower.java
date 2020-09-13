@@ -7,11 +7,11 @@ import vehicles.Flyable;
 public abstract class Tower {
     private List<Flyable> observers = new ArrayList<Flyable>();
 
-    public void Register(flyable Flyable) {
+    public void Register(Flyable flyable) {
 
     }
 
-    public void Unregister(flyable Flyable) {
+    public void Unregister(Flyable flyable) {
 
     }
 

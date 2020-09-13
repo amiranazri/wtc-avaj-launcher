@@ -13,7 +13,12 @@ public abstract class Aircraft {
         name = this.name;
         coordinates = this.coordinates;
         nextId = this.id;
+    }
 
+    long nextId()
+    {
+        this.idCounter++;
+        return (this.idCounter);
     }
 
 }
