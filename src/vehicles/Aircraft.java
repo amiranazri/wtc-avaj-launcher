@@ -1,4 +1,4 @@
-package vehicles;
+package src.simulation.vehicles;
 
 import weather.Coordinates;
 
@@ -8,17 +8,26 @@ public abstract class Aircraft {
     protected String name;
     protected Coordinates coordinates;
     private long nextId;
-    
-    protected Aircraft(String name, Coordinates coordinates) {
+
+    public long getId() {
+        return (this.id);
+    }
+
+    public String getName() {
+        return (this.name);
+    }
+
+    protected Aircraft(String name, Coordinates coordinates)
+    {
         name = this.name;
         coordinates = this.coordinates;
         nextId = this.id;
     }
 
-    long nextId()
+    private long nextId()
     {
-        this.idCounter++;
-        return (this.idCounter);
+        Aircraft.idCounter++;
+        return (Aircraft.idCounter);
     }
 
 }

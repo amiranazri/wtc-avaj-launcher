@@ -1,8 +1,9 @@
 package vehicles;
 
+import weather.Coordinates;
 import weather.WeatherTower;
 
-public class jetPlane extends Aircraft implements Flyable {
+public class jetPlane extends src.simulation.vehicles.Aircraft implements Flyable {
     private jetPlane(String name, Coordinates coordinates) {
 
     }
@@ -11,7 +12,7 @@ public class jetPlane extends Aircraft implements Flyable {
 
     }
 
-    public void registerTower(weatherTower) {
+    public void registerTower(WeatherTower weatherTower) {
 
     }
 }

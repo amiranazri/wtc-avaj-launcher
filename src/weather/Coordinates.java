@@ -25,8 +25,11 @@ public class Coordinates
             if (height < 0) {
                 height = 0;
             }
-            else if(height > 100) {
+            else if (height > 100) {
                 height = 100;
+            }
+            else if (height <= 0) {
+                System.out.println("Aircraft is preparing for landing...");
             }
             return (this.height);
         }

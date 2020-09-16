@@ -1,4 +1,4 @@
-package simulator;
+package simulation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,3 +18,4 @@ public abstract class Tower {
     protected void conditionsChanged() {
 
     }
+}
