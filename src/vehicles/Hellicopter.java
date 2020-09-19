@@ -18,6 +18,22 @@ public class helicopter extends src.simulation.vehicles.Aircraft implements Flya
             System.out.println("Error: No feedback from WeatherTower");
             return ;
         }
+
+        String weather = weatherTower.getWeather(this.coordinates);
+
+        if (weather == "RAIN") {
+            this.coordinates = new coordinates(coordinates.getLongitude() + 5, coordinates.getLatitude(), coordinates.getHeight());
+        }
+        else if (weather == "SUN") {
+            this.coordinates = new coordinates(coordinates.getLongitude() + 10, coordinates.getLatitude(), coordinates.getHeight() + 2);
+        }
+        else if (weather == "SNOW") {
+            this.coordinates = new coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 12);
+        }
+        else if (weather == "FOG") {
+            this.coordinates = new coordinates(coordinates.getLongitude() + 1, coordinates.getLatitude(), coordinates.getHeight());
+        }
+
         HashMap<String, String> weatherUpdate = new HashMap<String, String>();
         weatherUpdate.put("RAIN", "It's raining.");
         weatherUpdate.put("SUN", "It's sunny.");
