@@ -1,7 +1,6 @@
 package simulation;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.io.*;
 import vehicles.Flyable;
 
 public abstract class Tower {

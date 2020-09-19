@@ -11,14 +11,14 @@ public class Coordinates
             if (longitude < 1) { 
                 longitude = 1;
             }
-            return (this.longitude);
+            return (longitude);
         }
 
         public int getLatitude() {
             if (latitude < 1) {
                 latitude = 1;
             }
-            return (this.latitude);
+            return (latitude);
         }
 
         public int getHeight() {
@@ -31,6 +31,6 @@ public class Coordinates
             else if (height <= 0) {
                 System.out.println("Aircraft is preparing for landing...");
             }
-            return (this.height);
+            return (height);
         }
 }

@@ -1,4 +1,8 @@
+package simulation;
+
 import java.io.*;
+import vehicles.AircraftFactory;
+import vehicles.Flyable;
 
 public class simulator {
     
@@ -8,7 +12,7 @@ public static void main(String[] args) throws IOException{
     FileReader fileReader = new FileReader(file);
     BufferedReader buff = new BufferedReader(fileReader);
     String str;
-    String input = "25"; //should this be 25 or filename?
+    String input = file; //should this be 25 or filename?
     int strCounter = 0;
     int loop;
 

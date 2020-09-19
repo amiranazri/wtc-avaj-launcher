@@ -6,8 +6,8 @@ public abstract class Aircraft {
     protected long id;
     private static long idCounter;
     protected String name;
+    protected String vehicleType;
     protected Coordinates coordinates;
-    private long nextId;
 
     public long getId() {
         return (this.id);
@@ -21,13 +21,19 @@ public abstract class Aircraft {
     {
         name = this.name;
         coordinates = this.coordinates;
-        nextId = this.id;
+        nextId() = this.id;
+        vehicleType = "Aircraft";
     }
 
     private long nextId()
     {
         Aircraft.idCounter++;
         return (Aircraft.idCounter);
+    }
+
+    public String aircraftID() {
+        String newID = this.vehicleType + "#" + "(" + this.id + ")" + ": ";
+        return aircraftID();
     }
 
 }
