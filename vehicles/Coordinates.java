@@ -1,7 +1,13 @@
-package weather;
+package vehicles;
 
 public class Coordinates
 {
+    Coordinates(int longitude, int latitude, int height){
+        this.longitude = longitude;
+        this.latitude = latitude;
+        this.height = height;
+    }
+
     private int longitude;
     private int latitude;
     private int height;

@@ -1,16 +1,17 @@
 package vehicles;
 
 import java.io.*;
-import weather.Coordinates;
 import weather.WeatherTower;
+import weather.WeatherProvider;
+import weather.*;
+import java.util.HashMap;
 
-public class jetPlane extends src.simulation.vehicles.Aircraft implements Flyable {
+public class JetPlane extends src.simulation.vehicles.Aircraft implements Flyable {
 
     private WeatherTower weatherTower;
 
-    private jetPlane(String name, Coordinates coordinates) {
+    JetPlane(String name, Coordinates coordinates) {
         super(name, coordinates);
-
     }
 
     public void updateConditions() {
@@ -22,16 +23,16 @@ public class jetPlane extends src.simulation.vehicles.Aircraft implements Flyabl
         String weather = weatherTower.getWeather(this.coordinates);
 
         if (weather == "RAIN") {
-            this.coordinates = new coordinates(coordinates.getLongitude(), coordinates.getLatitude() + 5, coordinates.getHeight());
+            this.coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude() + 5, coordinates.getHeight());
         }
         else if (weather == "SUN") {
-            this.coordinates = new coordinates(coordinates.getLongitude(), coordinates.getLatitude() + 10, coordinates.getHeight() + 2);
+            this.coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude() + 10, coordinates.getHeight() + 2);
         }
         else if (weather == "SNOW") {
-            this.coordinates = new coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 7);
+            this.coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 7);
         }
         else if (weather == "FOG") {
-            this.coordinates = new coordinates(coordinates.getLongitude() + 1, coordinates.getLatitude(), coordinates.getHeight());
+            this.coordinates = new Coordinates(coordinates.getLongitude() + 1, coordinates.getLatitude(), coordinates.getHeight());
         }
 
         HashMap<String, String> weatherUpdate = new HashMap<String, String>();
@@ -45,6 +46,6 @@ public class jetPlane extends src.simulation.vehicles.Aircraft implements Flyabl
     public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
         weatherTower.register(this);
-        System.out.println(newID + "registered to weather tower.");
+        System.out.println(aircraftID() + "registered to weather tower.");
     }
 }

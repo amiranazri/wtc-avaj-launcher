@@ -1,17 +1,17 @@
 package vehicles;
 
 import java.io.*;
-import weather.Coordinates;
-import weather.WeatherProvider;
 import weather.WeatherTower;
-import Aircraft;
+import weather.WeatherProvider;
+import weather.*;
+import java.util.HashMap;
 
 
 public class Balloon extends src.simulation.vehicles.Aircraft implements Flyable {
     
     private WeatherTower weatherTower;
 
-    private balloon(String name, Coordinates coordinates)
+    Balloon(String name, Coordinates coordinates)
     {
         super(name, coordinates);
     }
@@ -25,16 +25,16 @@ public class Balloon extends src.simulation.vehicles.Aircraft implements Flyable
         String weather = weatherTower.getWeather(this.coordinates);
 
         if (weather == "RAIN") {
-            this.coordinates = new coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 4);
+            this.coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 4);
         }
         else if (weather == "SUN") {
-            this.coordinates = new coordinates(coordinates.getLongitude() + 2, coordinates.getLatitude(), coordinates.getHeight() + 4);
+            this.coordinates = new Coordinates(coordinates.getLongitude() + 2, coordinates.getLatitude(), coordinates.getHeight() + 4);
         }
         else if (weather == "SNOW") {
-            this.coordinates = new coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 15);
+            this.coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 15);
         }
         else if (weather == "FOG") {
-            this.coordinates = new coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 3);
+            this.coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 3);
         }
 
 
@@ -49,6 +49,6 @@ public class Balloon extends src.simulation.vehicles.Aircraft implements Flyable
     public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
         weatherTower.register(this);
-        System.out.println(newID + "registered to weather tower.");
+        System.out.println(aircraftID() + "registered to weather tower.");
     }
 }

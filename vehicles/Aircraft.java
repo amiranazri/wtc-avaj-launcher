@@ -1,6 +1,6 @@
 package src.simulation.vehicles;
 
-import weather.Coordinates;
+import vehicles.*;
 
 public abstract class Aircraft {
     protected long id;
@@ -21,19 +21,19 @@ public abstract class Aircraft {
     {
         name = this.name;
         coordinates = this.coordinates;
-        nextId() = this.id;
+        this.id = nextId();
         vehicleType = "Aircraft";
     }
 
     private long nextId()
     {
-        Aircraft.idCounter++;
-        return (Aircraft.idCounter);
+        idCounter++;
+        return (idCounter);
     }
 
     public String aircraftID() {
         String newID = this.vehicleType + "#" + "(" + this.id + ")" + ": ";
-        return aircraftID();
+        return newID;
     }
 
 }

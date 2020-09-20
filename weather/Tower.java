@@ -1,10 +1,12 @@
-package simulation;
+package weather;
 
 import java.io.*;
 import vehicles.Flyable;
+import java.util.Iterator;
+import java.util.ArrayList;
 
 public abstract class Tower {
-    private List<Flyable> observers = new ArrayList<Flyable>();
+    private ArrayList<Flyable> observers = new ArrayList<Flyable>();
 
     public void register(Flyable flyable) {
         observers.add(flyable);
@@ -15,9 +17,9 @@ public abstract class Tower {
     }
 
     protected void conditionsChanged() {
-        Iterator i = observers.iterator();
+        Iterator<Flyable> i = observers.iterator();
         while (i.hasNext()) {
-            flyable.updateConditions();
+            i.next().updateConditions();
          }
     }
 }
