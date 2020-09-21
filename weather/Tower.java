@@ -1,9 +1,15 @@
 package weather;
 
 import java.io.*;
-import vehicles.Flyable;
 import java.util.Iterator;
 import java.util.ArrayList;
+import vehicles.*;
+// import vehicles.Balloon;
+// import vehicles.JetPlane;
+// import vehicles.Helicopter;
+// import vehicles.Flyable;
+// import vehicles.Aircraft;
+import simulation.Writer;
 
 public abstract class Tower {
     private ArrayList<Flyable> observers = new ArrayList<Flyable>();
@@ -14,6 +20,8 @@ public abstract class Tower {
 
     public void unregister(Flyable flyable) {
         observers.remove(flyable);
+        // Writer.storeMessage("Tower says: " + "" + "unregistered from weather tower.");
+        
     }
 
     protected void conditionsChanged() {

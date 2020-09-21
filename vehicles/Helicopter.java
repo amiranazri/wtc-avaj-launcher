@@ -1,12 +1,13 @@
 package vehicles;
 
 import java.io.*;
+import java.util.HashMap;
+import simulation.Writer;
 import weather.WeatherTower;
 import weather.WeatherProvider;
 import weather.*;
-import java.util.HashMap;
 
-public class Helicopter extends src.simulation.vehicles.Aircraft implements Flyable {
+public class Helicopter extends Aircraft implements Flyable {
 
     private WeatherTower weatherTower;
 
@@ -19,6 +20,10 @@ public class Helicopter extends src.simulation.vehicles.Aircraft implements Flya
         if (this.weatherTower == null) {
             System.out.println("Error: No feedback from WeatherTower");
             return ;
+        }
+
+        if (this.coordinates.getLongitude() <= 0 || this.coordinates.getLatitude() <= 0 || this.coordinates.getHeight() <= 0) {
+            Writer.storeMessage("Tower says: " + "" + "unregistered from weather tower.");
         }
 
         String weather = weatherTower.getWeather(this.coordinates);
@@ -41,12 +46,18 @@ public class Helicopter extends src.simulation.vehicles.Aircraft implements Flya
         weatherUpdate.put("SUN", "It's sunny.");
         weatherUpdate.put("SNOW", "It's snowing");
         weatherUpdate.put("FOG", "It's foggy.");
+        Writer.storeMessage(this.aircraftID() + weatherUpdate.get(weather));
 
     }
     
     public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
         weatherTower.register(this);
-        System.out.println(aircraftID() + "registered to weather tower.");
+        Writer.storeMessage("Tower says: " + this.aircraftID() + "registered to weather tower.");
+    }
+
+    public String getAircraftID()
+    {
+        return this.aircraftID();
     }
 }

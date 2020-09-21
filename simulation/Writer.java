@@ -1,4 +1,4 @@
-package simulation;
+package vehicles;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -7,9 +7,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Writer {
-    static BufferedWriter writer;
-    static File file;
-    static ArrayList<String> fileContent = new ArrayList<String>();
+    public static BufferedWriter writer;
+    public static File file;
+    public static ArrayList<String> fileContent = new ArrayList<String>();
     
     public static void storeMessage(String message) {
         fileContent.add(message);
@@ -19,7 +19,7 @@ public class Writer {
         try{
         writer = new BufferedWriter(new FileWriter("simulation.txt"));
 
-        for (int i = 0; i<fileContent.size(); i++)
+        for (int i = 0; i < fileContent.size(); i++)
             writer.write(fileContent.get(i));
         writer.close();
         }
@@ -28,7 +28,4 @@ public class Writer {
             System.out.println("anything");
         }
     }
-
-   
-    
 }

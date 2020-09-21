@@ -10,4 +10,3 @@
 ./weather/WeatherTower.java
 ./weather/Tower.java
 ./weather/WeatherProvider.java
-./simulation/Writer.java

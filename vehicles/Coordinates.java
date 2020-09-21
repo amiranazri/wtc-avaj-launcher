@@ -1,5 +1,10 @@
 package vehicles;
 
+import java.io.*;
+import simulation.Writer;
+import weather.*;
+import vehicles.*;
+
 public class Coordinates
 {
     Coordinates(int longitude, int latitude, int height){
@@ -8,6 +13,7 @@ public class Coordinates
         this.height = height;
     }
 
+    WeatherTower weatherTower = new WeatherTower();
     private int longitude;
     private int latitude;
     private int height;
@@ -17,6 +23,7 @@ public class Coordinates
             if (longitude < 1) { 
                 longitude = 1;
             }
+            
             return (longitude);
         }
 
@@ -35,7 +42,7 @@ public class Coordinates
                 height = 100;
             }
             else if (height <= 0) {
-                System.out.println("Aircraft is preparing for landing...");
+                Writer.storeMessage("Aircraft is landing...");
             }
             return (height);
         }

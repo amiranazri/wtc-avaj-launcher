@@ -1,6 +1,7 @@
-package src.simulation.vehicles;
+package vehicles;
 
 import vehicles.*;
+import simulation.Writer;
 
 public abstract class Aircraft {
     protected long id;
@@ -19,8 +20,10 @@ public abstract class Aircraft {
 
     protected Aircraft(String name, Coordinates coordinates)
     {
-        name = this.name;
-        coordinates = this.coordinates;
+
+        System.out.println("Aircraft here we in");
+        this.name = name;
+        this.coordinates = coordinates;
         this.id = nextId();
         vehicleType = "Aircraft";
     }
@@ -33,6 +36,7 @@ public abstract class Aircraft {
 
     public String aircraftID() {
         String newID = this.vehicleType + "#" + "(" + this.id + ")" + ": ";
+        Writer.storeMessage(newID);
         return newID;
     }
 

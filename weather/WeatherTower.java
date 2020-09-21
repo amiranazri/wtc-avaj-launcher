@@ -2,6 +2,7 @@ package weather;
 
 import vehicles.Coordinates;
 import weather.*;
+import simulation.Writer;
 
 public class WeatherTower extends Tower {
     public String getWeather(Coordinates coordinates) {
