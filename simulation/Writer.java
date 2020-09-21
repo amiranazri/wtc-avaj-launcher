@@ -6,7 +6,7 @@ import java.io.*;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Writer {
+public abstract class Writer {
     public static BufferedWriter writer;
     public static File file;
     public static ArrayList<String> fileContent = new ArrayList<String>();

@@ -1,4 +1,4 @@
-25
+5
 Balloon B1 2 3 20
 Balloon B2 1 8 66
 JetPlane J1 23 44 32

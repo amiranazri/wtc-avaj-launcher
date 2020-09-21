@@ -15,7 +15,6 @@ public class Helicopter extends Aircraft implements Flyable {
     {
         super(name, coordinates);
     }
-
     public void updateConditions() {
         if (this.weatherTower == null) {
             System.out.println("Error: No feedback from WeatherTower");
@@ -47,7 +46,6 @@ public class Helicopter extends Aircraft implements Flyable {
         weatherUpdate.put("SNOW", "It's snowing");
         weatherUpdate.put("FOG", "It's foggy.");
         Writer.storeMessage(this.aircraftID() + weatherUpdate.get(weather));
-
     }
     
     public void registerTower(WeatherTower weatherTower) {
