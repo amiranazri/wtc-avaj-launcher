@@ -15,7 +15,6 @@ public class Balloon extends Aircraft implements Flyable {
     Balloon(String name, Coordinates coordinates)
     {
         super(name, coordinates);
-        System.out.println("we are in ballon");
     }
 
     public void updateConditions() {

@@ -18,9 +18,7 @@ public abstract class AircraftFactory {
             return JetPlane;
         }
         else if (type.equals("Balloon")) {
-            System.out.println("test 1");
             Balloon Balloon = new Balloon(name, coordinates);
-            System.out.println("test 2");
             return Balloon;
         }
         else {

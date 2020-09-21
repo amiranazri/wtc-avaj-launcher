@@ -28,5 +28,3 @@ public class Simulator {
         }
     }
 }
-        // Writer.storeMessage("I like pizza");
-        // Writer.writeToFile();

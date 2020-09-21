@@ -20,8 +20,6 @@ public abstract class Aircraft {
 
     protected Aircraft(String name, Coordinates coordinates)
     {
-
-        System.out.println("Aircraft here we in");
         this.name = name;
         this.coordinates = coordinates;
         this.id = nextId();
