@@ -28,7 +28,6 @@ public class Balloon extends Aircraft implements Flyable {
         }
 
         String weather = weatherTower.getWeather(this.coordinates);
-        System.out.println(weather);
 
         if (weather == "RAIN") {
             this.coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 4);
@@ -48,7 +47,7 @@ public class Balloon extends Aircraft implements Flyable {
         weatherUpdate.put("SUN", "I tried to find out where the sun went last night... it just dawned on me." + "\n");
         weatherUpdate.put("SNOW", "I can't land in this weather! Looks like there's snow way out..." + "\n");
         weatherUpdate.put("FOG", "If I disappeared into this fog, would I be mist?" + "\n");
-        Writer.storeMessage(this.aircraftID() + weatherUpdate.get(weather));
+        Writer.storeMessage("Balloon" + this.aircraftID() + weatherUpdate.get(weather));
     }
     
     public void registerTower(WeatherTower weatherTower) {

@@ -12,7 +12,6 @@ public class Simulator {
     static BufferedReader buff;
 
     public static void main(String[] args) throws IOException{
-        // try{
             ArrayList<String> Scenario = new ArrayList<String>();
             ArrayList<Flyable> flyable = new ArrayList<Flyable>();
             WeatherTower WeatherTower = new WeatherTower();
@@ -39,10 +38,5 @@ public class Simulator {
                 nbr--;
             }
             Writer.writeToFile();
-        // }
-        // catch(Exception e) {
-        //     System.err.println(e);
-		// 	// System.out.println("NullPointerException thrown!");
-		// }
     }
 }

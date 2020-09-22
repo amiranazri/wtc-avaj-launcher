@@ -45,7 +45,7 @@ public class JetPlane extends Aircraft implements Flyable {
         weatherUpdate.put("SUN", "On an island in the sun, We’ll be playing and having fun, And it makes me feel so fine, I can’t control my plane...");
         weatherUpdate.put("SNOW", "Everything is icy and blue, I'm going to die before I get to you...");
         weatherUpdate.put("FOG", "The snake, the rat, the cat, the dog, How you gon' see 'em if you flying' through the fog?");
-        Writer.storeMessage(this.aircraftID() + weatherUpdate.get(weather));
+        Writer.storeMessage("JetPlane" + this.aircraftID() + weatherUpdate.get(weather));
     }
     
     public void registerTower(WeatherTower weatherTower) {

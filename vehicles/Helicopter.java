@@ -45,7 +45,7 @@ public class Helicopter extends Aircraft implements Flyable {
         weatherUpdate.put("SUN", "It's sunny." + "\n");
         weatherUpdate.put("SNOW", "It's snowing" + "\n");
         weatherUpdate.put("FOG", "It's foggy." + "\n");
-        Writer.storeMessage(this.aircraftID() + weatherUpdate.get(weather));
+        Writer.storeMessage("Helicopter" + this.aircraftID() + weatherUpdate.get(weather));
     }
     
     public void registerTower(WeatherTower weatherTower) {

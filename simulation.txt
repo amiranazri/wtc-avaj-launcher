@@ -7,45 +7,45 @@ Tower says: HelicopterH3#(6): registered to weather tower.
 Tower says: BalloonB3#(7): registered to weather tower.
 Tower says: JetPlaneJ2#(8): registered to weather tower.
 Tower says: HelicopterH4#(9): registered to weather tower.
-B1#(1): If I disappeared into this fog, would I be mist?
-B2#(2): Never mind cats and dogs, it's raining chickens and ducks! What Fowl weather.
-J1#(3): The snake, the rat, the cat, the dog, How you gon' see 'em if you flying' through the fog?H1#(4): It's sunny.
-H2#(5): It's foggy.
-H3#(6): It's sunny.
-B3#(7): Never mind cats and dogs, it's raining chickens and ducks! What Fowl weather.
-J2#(8): You paint me a blue sky, then go back and turn it to rain, how will I ever land this plane...H4#(9): It's snowing
-B1#(1): I tried to find out where the sun went last night... it just dawned on me.
-B2#(2): If I disappeared into this fog, would I be mist?
-J1#(3): The snake, the rat, the cat, the dog, How you gon' see 'em if you flying' through the fog?H1#(4): It's sunny.
-H2#(5): It's sunny.
-H3#(6): It's foggy.
-B3#(7): Never mind cats and dogs, it's raining chickens and ducks! What Fowl weather.
-J2#(8): The snake, the rat, the cat, the dog, How you gon' see 'em if you flying' through the fog?H4#(9): It's raining.
-B1#(1): I tried to find out where the sun went last night... it just dawned on me.
-B2#(2): I tried to find out where the sun went last night... it just dawned on me.
-J1#(3): Everything is icy and blue, I'm going to die before I get to you...H1#(4): It's raining.
-H2#(5): It's snowing
-H3#(6): It's sunny.
-B3#(7): I can't land in this weather! Looks like there's snow way out...
-J2#(8): The snake, the rat, the cat, the dog, How you gon' see 'em if you flying' through the fog?H4#(9): It's sunny.
-B1#(1): If I disappeared into this fog, would I be mist?
-B2#(2): Never mind cats and dogs, it's raining chickens and ducks! What Fowl weather.
-J1#(3): The snake, the rat, the cat, the dog, How you gon' see 'em if you flying' through the fog?H1#(4): It's foggy.
-H2#(5): It's raining.
-H3#(6): It's sunny.
-B3#(7): I tried to find out where the sun went last night... it just dawned on me.
-J2#(8): Everything is icy and blue, I'm going to die before I get to you...H4#(9): It's raining.
-B1#(1): I tried to find out where the sun went last night... it just dawned on me.
-B2#(2): Never mind cats and dogs, it's raining chickens and ducks! What Fowl weather.
-J1#(3): The snake, the rat, the cat, the dog, How you gon' see 'em if you flying' through the fog?H1#(4): It's raining.
-H2#(5): It's snowing
-H3#(6): It's snowing
-B3#(7): Never mind cats and dogs, it's raining chickens and ducks! What Fowl weather.
-J2#(8): You paint me a blue sky, then go back and turn it to rain, how will I ever land this plane...H4#(9): It's raining.
-B1#(1): Never mind cats and dogs, it's raining chickens and ducks! What Fowl weather.
-B2#(2): I can't land in this weather! Looks like there's snow way out...
-J1#(3): Everything is icy and blue, I'm going to die before I get to you...H1#(4): It's sunny.
-H2#(5): It's sunny.
-H3#(6): It's foggy.
-B3#(7): If I disappeared into this fog, would I be mist?
-J2#(8): You paint me a blue sky, then go back and turn it to rain, how will I ever land this plane...H4#(9): It's sunny.
+BalloonB1#(1): Never mind cats and dogs, it's raining chickens and ducks! What Fowl weather.
+BalloonB2#(2): I can't land in this weather! Looks like there's snow way out...
+JetPlaneJ1#(3): Everything is icy and blue, I'm going to die before I get to you...HelicopterH1#(4): It's sunny.
+HelicopterH2#(5): It's snowing
+HelicopterH3#(6): It's snowing
+BalloonB3#(7): I tried to find out where the sun went last night... it just dawned on me.
+JetPlaneJ2#(8): The snake, the rat, the cat, the dog, How you gon' see 'em if you flying' through the fog?HelicopterH4#(9): It's raining.
+BalloonB1#(1): I can't land in this weather! Looks like there's snow way out...
+BalloonB2#(2): I tried to find out where the sun went last night... it just dawned on me.
+JetPlaneJ1#(3): The snake, the rat, the cat, the dog, How you gon' see 'em if you flying' through the fog?HelicopterH1#(4): It's raining.
+HelicopterH2#(5): It's snowing
+HelicopterH3#(6): It's raining.
+BalloonB3#(7): I can't land in this weather! Looks like there's snow way out...
+JetPlaneJ2#(8): The snake, the rat, the cat, the dog, How you gon' see 'em if you flying' through the fog?HelicopterH4#(9): It's sunny.
+BalloonB1#(1): I tried to find out where the sun went last night... it just dawned on me.
+BalloonB2#(2): I tried to find out where the sun went last night... it just dawned on me.
+JetPlaneJ1#(3): Everything is icy and blue, I'm going to die before I get to you...HelicopterH1#(4): It's foggy.
+HelicopterH2#(5): It's snowing
+HelicopterH3#(6): It's foggy.
+BalloonB3#(7): If I disappeared into this fog, would I be mist?
+JetPlaneJ2#(8): On an island in the sun, We’ll be playing and having fun, And it makes me feel so fine, I can’t control my plane...HelicopterH4#(9): It's foggy.
+BalloonB1#(1): Never mind cats and dogs, it's raining chickens and ducks! What Fowl weather.
+BalloonB2#(2): I tried to find out where the sun went last night... it just dawned on me.
+JetPlaneJ1#(3): You paint me a blue sky, then go back and turn it to rain, how will I ever land this plane...HelicopterH1#(4): It's sunny.
+HelicopterH2#(5): It's snowing
+HelicopterH3#(6): It's snowing
+BalloonB3#(7): If I disappeared into this fog, would I be mist?
+JetPlaneJ2#(8): Everything is icy and blue, I'm going to die before I get to you...HelicopterH4#(9): It's foggy.
+BalloonB1#(1): If I disappeared into this fog, would I be mist?
+BalloonB2#(2): I tried to find out where the sun went last night... it just dawned on me.
+JetPlaneJ1#(3): On an island in the sun, We’ll be playing and having fun, And it makes me feel so fine, I can’t control my plane...HelicopterH1#(4): It's sunny.
+Tower says: unregistered from weather tower.Aircraft is landing...HelicopterH2#(5): It's snowing
+HelicopterH3#(6): It's snowing
+BalloonB3#(7): I can't land in this weather! Looks like there's snow way out...
+JetPlaneJ2#(8): Everything is icy and blue, I'm going to die before I get to you...HelicopterH4#(9): It's foggy.
+Tower says: unregistered from weather tower.Aircraft is landing...BalloonB1#(1): If I disappeared into this fog, would I be mist?
+BalloonB2#(2): I tried to find out where the sun went last night... it just dawned on me.
+JetPlaneJ1#(3): Everything is icy and blue, I'm going to die before I get to you...HelicopterH1#(4): It's sunny.
+Tower says: unregistered from weather tower.Aircraft is landing...HelicopterH2#(5): It's raining.
+HelicopterH3#(6): It's foggy.
+BalloonB3#(7): If I disappeared into this fog, would I be mist?
+JetPlaneJ2#(8): The snake, the rat, the cat, the dog, How you gon' see 'em if you flying' through the fog?HelicopterH4#(9): It's sunny.
