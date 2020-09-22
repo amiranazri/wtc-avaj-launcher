@@ -23,7 +23,6 @@ public abstract class Aircraft {
         this.name = name;
         this.coordinates = coordinates;
         this.id = nextId();
-        vehicleType = "Aircraft";
     }
 
     private long nextId()
@@ -33,8 +32,7 @@ public abstract class Aircraft {
     }
 
     public String aircraftID() {
-        String newID = this.vehicleType + "#" + "(" + this.id + ")" + ": ";
-        Writer.storeMessage(newID);
+        String newID = this.name + "#" + "(" + this.id + ")" + ": ";
         return newID;
     }
 

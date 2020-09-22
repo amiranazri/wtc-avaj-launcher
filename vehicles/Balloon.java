@@ -28,6 +28,7 @@ public class Balloon extends Aircraft implements Flyable {
         }
 
         String weather = weatherTower.getWeather(this.coordinates);
+        System.out.println(weather);
 
         if (weather == "RAIN") {
             this.coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 4);
@@ -43,17 +44,17 @@ public class Balloon extends Aircraft implements Flyable {
         }
 
         HashMap<String, String> weatherUpdate = new HashMap<String, String>();
-        weatherUpdate.put("RAIN", "Never mind cats and dogs, it's raining chickens and ducks! What Fowl weather.");
-        weatherUpdate.put("SUN", "I tried to find out where the sun went last night... it just dawned on me.");
-        weatherUpdate.put("SNOW", "I can't land in this weather! Looks like there's snow way out...");
-        weatherUpdate.put("FOG", "If I disappeared into this fog, would I be mist?");
+        weatherUpdate.put("RAIN", "Never mind cats and dogs, it's raining chickens and ducks! What Fowl weather." + "\n");
+        weatherUpdate.put("SUN", "I tried to find out where the sun went last night... it just dawned on me." + "\n");
+        weatherUpdate.put("SNOW", "I can't land in this weather! Looks like there's snow way out..." + "\n");
+        weatherUpdate.put("FOG", "If I disappeared into this fog, would I be mist?" + "\n");
         Writer.storeMessage(this.aircraftID() + weatherUpdate.get(weather));
     }
     
     public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
         weatherTower.register(this);
-        Writer.storeMessage("Tower says: " + this.aircraftID() + "registered to weather tower.");
+        Writer.storeMessage("Tower says: Balloon" + this.aircraftID() + "registered to weather tower." + "\n");
     }
 
     public String getAircraftID()

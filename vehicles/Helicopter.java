@@ -41,17 +41,17 @@ public class Helicopter extends Aircraft implements Flyable {
         }
 
         HashMap<String, String> weatherUpdate = new HashMap<String, String>();
-        weatherUpdate.put("RAIN", "It's raining.");
-        weatherUpdate.put("SUN", "It's sunny.");
-        weatherUpdate.put("SNOW", "It's snowing");
-        weatherUpdate.put("FOG", "It's foggy.");
+        weatherUpdate.put("RAIN", "It's raining." + "\n");
+        weatherUpdate.put("SUN", "It's sunny." + "\n");
+        weatherUpdate.put("SNOW", "It's snowing" + "\n");
+        weatherUpdate.put("FOG", "It's foggy." + "\n");
         Writer.storeMessage(this.aircraftID() + weatherUpdate.get(weather));
     }
     
     public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
         weatherTower.register(this);
-        Writer.storeMessage("Tower says: " + this.aircraftID() + "registered to weather tower.");
+        Writer.storeMessage("Tower says: Helicopter" + this.aircraftID() + "registered to weather tower." + "\n");
     }
 
     public String getAircraftID()

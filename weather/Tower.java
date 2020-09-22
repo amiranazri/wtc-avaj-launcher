@@ -4,11 +4,6 @@ import java.io.*;
 import java.util.Iterator;
 import java.util.ArrayList;
 import vehicles.*;
-// import vehicles.Balloon;
-// import vehicles.JetPlane;
-// import vehicles.Helicopter;
-// import vehicles.Flyable;
-// import vehicles.Aircraft;
 import simulation.Writer;
 
 public abstract class Tower {
